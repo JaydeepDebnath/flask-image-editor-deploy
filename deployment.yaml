@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-image-editor-deployment
+  labels:
+    app: flask-image-editor
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-image-editor
+  template:
+    metadata:
+      labels:
+        app: flask-image-editor
+    spec:
+      containers:
+        - name: flask-image-editor
+          image: jay0604/flask-image-editor:1.0.0-12
+          ports:
+            - containerPort: 5000
