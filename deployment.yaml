@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: flask-image-editor
-          image: jay0604/flask-image-editor:1.0.0-12
+          image: jay0604/flask-image-editor:1.0.0-13
           ports:
             - containerPort: 5000
