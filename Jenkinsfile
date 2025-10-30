@@ -5,7 +5,7 @@ pipeline {
         APP_NAME = "flask-image-editor"
         DOCKER_USER = "jay0604"
         BASE_VERSION = "1.0.0"
-        IMAGE_TAG = "${BASE_VERSION}-${BUILD_NUMBER}"
+        IMAGE_TAG = "1.0.0-15"
     }
 
     stages {
